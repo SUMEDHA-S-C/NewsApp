@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: #eee;
+}
+
+img {
+    height: 150px;
+    width: 100%;
+    border-radius: 2%;
+    text-align: center;
+    object-fit: cover;
+}
+
+
+/* .body {
+    height: 650px;
+    width: 100%;
+    background-image: url("../images/bgImage.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+} */
+
+ul li {
+    border-bottom: 1px solid #ccc;
+    list-style: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 8px;
+    font-size: 14px;
+}
+
+ul {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+#sportsAllTemplate,
+#entertainmentsAllTemplate {
+    border-right: 1px solid #ccc;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: 1px 1px 3px 1px #ccc;
+}

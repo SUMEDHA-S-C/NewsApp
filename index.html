@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News</title>
+    <link type="text/css" rel="stylesheet" href="./bootstrap-4.5.0-dist/css/bootstrap.css" />
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" /> -->
+    <link type="text/css" rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+    <nav class="navbar nav p-0 text-light m-0" style="background: #225486;">
+        <a class="navbar-brand text-light ml-lg-3" href="#">E-News</a>
+        <ul class="navbar">
+            <li class="navbar nav-item p-0">
+                <a class="nav-link text-light" href="business.html">Business</a>
+            </li>
+            <li class="navbar nav-item p-0">
+                <a class="nav-link text-light" href="health.html">Health</a>
+            </li>
+            <li class="navbar nav-item p-0">
+                <a class="nav-link text-light" href="science.html">Science</a>
+            </li>
+            <li class="navbar nav-item p-0">
+                <a class="nav-link text-light" href="sports.html">Sports</a>
+            </li>
+            <li class="navbar nav-item p-0">
+                <a class="nav-link text-light" href="technology.html">Technology</a>
+            </li>
+        </ul>
+    </nav>
+
+    <article class="container">
+        <div id="articleContent">
+            <div class="row">
+                <!-- sports section starts here -->
+                <div class="col-md-3">
+                    <h4 class="text-white font-weight-bold border-bottom p-2 bg-primary mt-2 text-uppercase">
+                        Sports
+                    </h4>
+
+                    <div id="sportSection">
+                        <div id="sportFirstTemplate"></div>
+                        <div id="sportsAllTemplate"></div>
+                    </div>
+                </div>
+                <!-- sports section ends here -->
+
+                <!-- entertainment section starts here -->
+                <div class="col-md-3 ml-auto">
+                    <h4 class="text-white font-weight-bold border-bottom p-2 bg-primary mt-2 text-uppercase">
+                        Entertainment
+                    </h4>
+
+                    <div id="entertainmentSection">
+                        <div id="entertainmentFirstTemplate"></div>
+                        <div id="entertainmentsAllTemplate"></div>
+                    </div>
+                </div>
+                <!-- entertainment section ends here -->
+            </div>
+        </div>
+    </article>
+
+    <script src="./javascript/sportsApi.js "></script>
+    <script src="./javascript/enterApi.js "></script>
+</body>
+
+</html>
