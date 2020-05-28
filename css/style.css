@@ -25,7 +25,8 @@ img {
     object-fit: cover;
 } */
 
-ul li {
+#sportsAllTemplate ul li,
+#entertainmentsAllTemplate ul li {
     border-bottom: 1px solid #ccc;
     list-style: none;
     white-space: nowrap;
@@ -40,10 +41,53 @@ ul {
     padding: 0 !important;
 }
 
+li {
+    list-style: none;
+}
+
 #sportsAllTemplate,
 #entertainmentsAllTemplate {
     border-right: 1px solid #ccc;
-    height: 100%;
+    height: 100vh;
+    overflow: scroll;
     background-color: #fff;
     box-shadow: 1px 1px 3px 1px #ccc;
+}
+
+#covidBlock section {
+    display: flex;
+}
+
+#covidBlock section div {
+    /* flex: 1; */
+    background: #fff;
+    padding: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 5px 1px #eee;
+    margin: 4px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+#covidBlock section div h4 {
+    margin: 4px 10px 4px 0;
+    padding: 7px;
+}
+
+#entertainmentSection img {
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+}
+
+#entertainmentSection #enterRow {
+    display: flex;
+    border-bottom: 1px solid #111;
+    padding-bottom: 2px;
+}
+
+#entertainmentSection #enterRow li {
+    border: none;
 }

@@ -24,13 +24,20 @@
                 <a class="nav-link text-light" href="science.html">Science</a>
             </li>
             <li class="navbar nav-item p-0">
-                <a class="nav-link text-light" href="sports.html">Sports</a>
-            </li>
-            <li class="navbar nav-item p-0">
                 <a class="nav-link text-light" href="technology.html">Technology</a>
             </li>
         </ul>
     </nav>
+    <article id="articles">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a href="#" class="navbar-brand">Corona Details</a>
+            <ul class="nav-bar">
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="covidBlock"></a>
+                </li>
+            </ul>
+        </nav>
+    </article>
 
     <article class="container">
         <div id="articleContent">
@@ -47,15 +54,25 @@
                     </div>
                 </div>
                 <!-- sports section ends here -->
+                <!-- weather block starts -->
+                <div class="col-md-5">
+                    <form action="/">
+                        <h5 class="text-white font-weight-bold border-bottom p-2 bg-secondary mt-2 text-uppercase">
+                            Weather
+                        </h5>
+                        <input type="search" class="form-control" id="input" placeholder="search weather" />
+                    </form>
+                    <div id="weatherTemplate"></div>
+                </div>
+                <!-- weather block ends -->
 
                 <!-- entertainment section starts here -->
-                <div class="col-md-3 ml-auto">
+                <div class="col-md-4 ml-auto">
                     <h4 class="text-white font-weight-bold border-bottom p-2 bg-primary mt-2 text-uppercase">
                         Entertainment
                     </h4>
 
                     <div id="entertainmentSection">
-                        <div id="entertainmentFirstTemplate"></div>
                         <div id="entertainmentsAllTemplate"></div>
                     </div>
                 </div>
@@ -66,6 +83,8 @@
 
     <script src="./javascript/sportsApi.js "></script>
     <script src="./javascript/enterApi.js "></script>
+    <script src="./javascript/covid19.js"></script>
+    <script src="./javascript/weather.js"></script>
 </body>
 
 </html>

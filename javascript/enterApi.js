@@ -9,25 +9,34 @@ window
         data
             .json()
             .then((entertainmentData) => {
-                console.log(entertainmentData.articles);
-                let entertainmentFeed = entertainmentData.articles;
-                let fisrtentertainmentsBlock = entertainmentData.articles;
+                // console.log(entertainmentData.articles);
+                // let entertainmentFeed = entertainmentData.articles;
+                // let fisrtentertainmentsBlock = entertainmentData.articles;
 
-                let entertainmentsNewsBlockOne = fisrtentertainmentsBlock[0];
-                document.getElementById("entertainmentFirstTemplate").innerHTML = `
-                <ul>
-                    <img src="${entertainmentsNewsBlockOne.urlToImage}" />
-                    <a href="${entertainmentsNewsBlockOne.url}" target="_blank">
-                    
-                </ul>`;
+                // let entertainmentsNewsBlockOne = fisrtentertainmentsBlock[0];
+                // document.getElementById("entertainmentFirstTemplate").innerHTML = `
+                // <ul>
+                //     <img src="${entertainmentsNewsBlockOne.urlToImage}" />
+                //     <a href="${entertainmentsNewsBlockOne.url}" target="_blank">
+
+                // </ul>`;
                 let entertainmentsInfo = entertainmentData.articles;
                 let output = [];
                 for (let entertainments of entertainmentsInfo) {
                     console.log(entertainments);
                     output += `
-                    <ul class="list-group py-2 my-2">
+                    <ul class="list-group">
+                    
+                    <div id='enterRow'>
+                    <div>
+                        <img src="${entertainments.urlToImage}">
+                    </div>
+                    <div >
                         <a href="${entertainments.url}" target="_blank">
-                        <li class="font-weight-bold text-dark">${entertainments.title}</li></a>    
+                        <li class="font-weight-bold text-dark">${entertainments.title}</li></a>
+                    </div> 
+                </div>   
+                    
                     </ul>`;
                 }
                 document.getElementById("entertainmentsAllTemplate").innerHTML = output;
