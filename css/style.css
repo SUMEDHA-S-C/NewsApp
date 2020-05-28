@@ -48,10 +48,16 @@ li {
 #sportsAllTemplate,
 #entertainmentsAllTemplate {
     border-right: 1px solid #ccc;
-    height: 100vh;
-    overflow: scroll;
+    /* height: 100vh; */
     background-color: #fff;
     box-shadow: 1px 1px 3px 1px #ccc;
+}
+
+#sportSection,
+#entertainmentsAllTemplate {
+    height: 80vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 #covidBlock section {
