@@ -97,3 +97,35 @@ li {
 #entertainmentSection #enterRow li {
     border: none;
 }
+
+
+/* weather api style */
+
+.icon img {
+    height: 39px !important;
+    width: auto !important;
+    object-fit: scale-down;
+    background-color: blue;
+}
+
+#weatherTemplate .card-body p,
+#weatherTemplate span {
+    padding: 4px;
+    text-transform: capitalize;
+    font-size: 12px;
+    color: #03a9f4;
+    font-weight: bold;
+    border-bottom: 1px solid #eee;
+    margin: 10px;
+}
+
+#weatherTemplate .card-body {
+    background-color: #ddd;
+}
+
+#weatherTemplate .card-body div {
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
